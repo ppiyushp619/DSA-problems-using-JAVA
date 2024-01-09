@@ -21,20 +21,18 @@ public class EvenNumberInARange {
             if (A[i] % 2 == 0) {
                 // Accumulate even counts for prefix sum
 
-                if(i==0){
+                if (i == 0) {
                     pfEven[i] = pfEven[i] + 1;
                 } else {
                     pfEven[i] = pfEven[i - 1] + 1;
                 }
                 // Use previous value for prefix sum
             } else {
-                if(i!=0) {
+                if (i != 0) {
                     pfEven[i] = pfEven[i - 1];
                 }
             }
         }
-
-        System.out.println("pfEven: "+Arrays.toString(pfEven));
 
         // Process queries using the prefix sum array
         for (int j = 0; j < Q; j++) {
