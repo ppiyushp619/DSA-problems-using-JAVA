@@ -4,17 +4,7 @@ import java.util.Arrays;
 
 public class EvenNumberInARange {
 
-    public static int[] solve(int[] A, int[][] B) {
-
-        /**
-
-         A = [2, 1, 8, 3, 9, 6]
-         B = [   [0, 3]
-         [3, 5]
-         [1, 3]
-         [2, 4]   ]
-
-         */
+    public static int[] getCountOfEvenNumbers(int[] A, int[][] B) {
 
         int N = A.length; //6
         int Q = B.length; //3
@@ -62,6 +52,6 @@ public class EvenNumberInARange {
         int [] A = {2, 1, 8, 3, 9, 6};
         int[][] B = {{0, 3},{3, 5},{1, 3},{2, 4}};
 
-        System.out.println(Arrays.toString(solve(A, B)));
+        System.out.println(Arrays.toString(getCountOfEvenNumbers(A, B)));
     }
 }
