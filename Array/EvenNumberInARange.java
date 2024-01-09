@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Arrays;
 
-public class EvenNuberInARange {
+public class EvenNumberInARange {
 
     public static int[] solve(int[] A, int[][] B) {
 
