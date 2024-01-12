@@ -45,7 +45,7 @@ package Array;
  * */
 public class ReverseTheArray {
 
-    public int[] solve(final int[] A) {
+    public int[] reverseArray(final int[] A) {
 
         int N = A.length;
         int[] revArr  = new int[N];
